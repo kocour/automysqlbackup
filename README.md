@@ -1,4 +1,4 @@
-AutomysqlBackup
+# AutomysqlBackup
 -------------------------
 .. INDEX
 -------------------------
@@ -50,7 +50,8 @@ Automysqlbackup can be run a number of ways, you can choose which is best for yo
 
 1. Create a script as below called runmysqlbackup using the lines below:
 
-#~~~~ Copy From Below Here ~~~~
+###~~~~ Copy From Below Here ~~~~
+```bash
 #!/bin/sh
 
 /usr/local/bin/automysqlbackup /etc/automysqlbackup/myserver.conf
@@ -58,8 +59,8 @@ Automysqlbackup can be run a number of ways, you can choose which is best for yo
 chown root.root /var/backup/db* -R
 find /var/backup/db* -type f -exec chmod 400 {} \;
 find /var/backup/db* -type d -exec chmod 700 {} \;
-
-#~~~~~ Copy To Above Here ~~~~
+```
+###~~~~~ Copy To Above Here ~~~~
 
 2. Save it to a suitable location or copy it to your /etc/cron.daily folder. 
 
