@@ -1699,8 +1699,8 @@ method_backup () {
 	#	daily_all-databases_DBNAME_2011-08-14_18h12m_7.sql(.enc).{gz,bzip2}
 
 	echo "======================================================================"
-	echo "AutoMySQLBackup version ${version}"
-	echo "http://sourceforge.net/projects/automysqlbackup/"
+#	echo "AutoMySQLBackup version ${version}"
+#	echo "http://sourceforge.net/projects/automysqlbackup/"
 	echo 
 	echo "Backup of Database Server - ${CONFIG_mysql_dump_host_friendly:-$CONFIG_mysql_dump_host}"
 	( IFS=,; echo "Databases - ${CONFIG_db_names[*]}" )
