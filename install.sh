@@ -475,6 +475,9 @@ cp -i automysqlbackup.conf "${configdir}"/myserver.conf
 cp -i automysqlbackup "${bindir}"/
 [[ -f "${bindir}"/automysqlbackup ]] && [[ -x "${bindir}"/automysqlbackup ]] || chmod +x "${bindir}"/automysqlbackup || echo " failed - make sure you make the program executable, i.e. run 'chmod +x ${bindir}/automysqlbackup'"
 echo
+echo "Installing mailutils & pigz"
+aptitude -y install mailutils pigz
+echo
 
 if echo $PATH | grep "${bindir}" >/dev/null 2>&1; then
   printf "if you are running automysqlbackup under the same user as you run this install script,\nyou should be able to access it by running 'automysqlbackup' from the command line.\n"
