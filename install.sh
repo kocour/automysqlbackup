@@ -405,7 +405,7 @@ echo "### Checking archive files for existence, readability and integrity."
 echo
 
 precheck_files=( automysqlbackup 19b5dbef326c4385e2946c91d614966d
-automysqlbackup.conf f65cca17be9a0fd1411a8e871bf857f3
+automysqlbackup.conf d026509e6aaaad673322c276cd6a067f
 README.md 738d92253e6812db2e1100e6ba2dbd50
 LICENSE 39bba7d2cf0ba1036f2a6e2be52fe3f0
 )
