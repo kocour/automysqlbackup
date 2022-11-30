@@ -456,6 +456,7 @@ parse_configuration () {
 	  opt_dbstatus=( "${opt_dbstatus[@]}" '--ssl' )
     }
     [[ "${CONFIG_mysql_dump_master_data}" ]] && (( ${CONFIG_mysql_dump_master_data} == 1 || ${CONFIG_mysql_dump_master_data} == 2 )) && { opt=( "${opt[@]}" "--master-data=${CONFIG_mysql_dump_master_data}" );}
+    [[ "${CONFIG_mysql_dump_source_data}" ]] && (( ${CONFIG_mysql_dump_source_data} == 1 || ${CONFIG_mysql_dump_source_data} == 2 )) && { opt=( "${opt[@]}" "--source-data=${CONFIG_mysql_dump_source_data}" );}
     [[ "${CONFIG_mysql_dump_single_transaction}" = "yes" ]]	&& {
 	  opt=( "${opt[@]}" '--single-transaction' )
 	  opt_fullschema=( "${opt_fullschema[@]}" '--single-transaction' )
